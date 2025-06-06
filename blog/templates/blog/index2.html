@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewShop</title>
+    {% load static %} {% comment %}
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/static/blog/css/style.csss'%}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="http://192.168.43.160:9000/static/blog/css/style.css"
+    />
+    {% endcomment %}
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="shortcut icon"
+      href="{% static 'blog/images/fav.png' %}"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- ==header section==================== -->
+    <header class="py-3 md:px-8 bg-indigo-300 z-10 fixed w-[100%] top-0 left-0">
+      <nav
+        class="flex items-center justify-between md:w-[80%] mx-auto px-2 md:px-0"
+      >
+        <div>
+          <h1 class="text-gray-900 font-bold md:text-2xl text-xl">
+            New<span class="text-4xl text-indigo-600">S</span>hop
+          </h1>
+        </div>
+        <div class="flex gap-4">
+          <a
+            href="#"
+            class="text-xs md:text-xl bg-indigo-400 py-1.5 md:px-5 px-2 rounded-full hover:bg-indigo-500 transition-all duration-300 text-gray-900 hover:text-white"
+            >sgin up</a
+          >
+          <a
+            href="#"
+            class="text-xs md:text-xl hover:bg-indigo-400 py-1.5 md:px-5 px-2 rounded-full bg-indigo-500 transition-all duration-300 hover:text-gray-900 text-white"
+            >sgin in</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- ==main section================ -->
+    <main class="py-8 md:py-16 bg-indigo-200 mt-16">
+      <div class="w-[80%] mx-auto">
+        <!-- search bar -->
+        <div class="flex items-center justify-center space-x-3">
+          <input
+            type="search"
+            class="border border-indigo-500 rounded-2xl px-4 py-2"
+            value=""
+            placeholder="Search .........."
+          />
+          <button
+            class="text-xs md:text-xl bg-indigo-400 py-1.5 md:px-5 px-2 rounded-full hover:bg-indigo-500 transition-all duration-300 text-white hover:text-white cursor-pointer"
+          >
+            search
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- ==shop card================ -->
+    <section class="py-16">
+      <div class="w-[80%] mx-auto">
+        <div class="grid md:grid-cols-4 grid-cols-1 gap-5">
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="{% static 'blog/images/fav.png' %}"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="images/tisart.jpeg"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                recusandae. Ab, odit lorem eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="{% static 'blog/images/fav.png' %}"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="images/7up.png"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet lorem consectetur adipisicing elit.
+                recusandae. Ab, odit eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="{% static 'blog/images/fav.png' %}"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="{% static 'blog/images/fav.png' %}"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                recusandae. Ab, odit eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="{% static 'blog/images/fav.png' %}"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="images/tisart.jpeg"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                recusandae. Ab, odit eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="{% static 'blog/images/fav.png' %}"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="{% static 'blog/images/tisart.jpeg' %}"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                recusandae. Ab, odit eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="{% static 'blog/images/fav.png' %}"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="{% static 'blog/images/tisart.jpeg' %}"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                recusandae. Ab, odit eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="/images/fav.png"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="images/tisart.jpeg"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                recusandae. Ab, odit eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="/images/fav.png"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="images/tisart.jpeg"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                recusandae. Ab, odit eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="/images/fav.png"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="images/tisart.jpeg"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                recusandae. Ab, odit eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="/images/fav.png"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="images/tisart.jpeg"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                recusandae. Ab, odit eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="/images/fav.png"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="images/tisart.jpeg"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                recusandae. Ab, odit eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="/images/fav.png"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="images/tisart.jpeg"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                recusandae. Ab, odit eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+
+          <div
+            class="py-4 px-2 flex flex-col justify-center bg-indigo-300 shadow-2xl rounded-xl"
+          >
+            <div class="flex items-center pb-3 justify-between">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="/images/fav.png"
+                      class="w-[50px] h-[50px] rounded-full object-cover"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="font-bold md:text-2xl text-gray-700">
+                  <a href="#">junayed</a>
+                </div>
+              </div>
+
+              <div class="font-black text-xl cursor-pointer mr-2">⥣</div>
+            </div>
+            <a href="#">
+              <img
+                src="images/tisart.jpeg"
+                class="w-full h-[20rem] object-cover"
+                alt=""
+              />
+              <h3 class="pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                recusandae. Ab, odit eos?
+              </h3>
+            </a>
+            <div class="flex space-x-3">
+              <div class="font-bold text-left text-3xl text-orange-500">
+                <del>$700</del>
+              </div>
+              <div class="font-bold text-left text-3xl">$600</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+.container {
+    width: 78%;
+    /* height: 100vh; */
+    padding: 50px 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.profile-imge {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.div1 {
+    background-color: rgb(154, 162, 169);
+    border-radius: 15px;
+    /* padding-bottom: 20px; */
+    min-width: 350px;
+    width: 60%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(195, 194, 194);
+    padding: 5px 30px;
+
+}
+
+.profile-date p {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.profile-hed {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.hedar h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(67, 63, 63);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.post-card {
+    padding: 5px 20px;
+    min-width: 350px;
+    overflow: hidden;
+}
+
+
+.post-img {
+    object-fit: cover;
+    /* overflow: hidden; */
+}
+
+.profile-rige {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(181, 181, 181);
+    padding: 0px 30px;
+}
+
+.profile-rige .like-btn {
+    font-size: 2rem;
+    color: rgb(85, 85, 227);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    padding: 7px 30px;
+}
+
+.profile-rige .comment-btn {
+    font-size: 2rem;
+    color: rgb(146, 146, 156);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    padding: 7px 30px;
+}

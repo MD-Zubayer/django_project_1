@@ -1,0 +1,98 @@
+# =====================================
+# 🐍 Python/Django Project .gitignore
+# =====================================
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django SQLite DB (if used)
+*.sqlite3
+db.sqlite3
+
+# Django migrations
+**/migrations/*.pyc
+**/migrations/__pycache__/
+# If you want to ignore migration files themselves, uncomment below:
+# **/migrations/*.py
+
+# Environment variables
+.env
+.env.*
+
+# Logs and reports
+*.log
+*.pot
+*.mo
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Static & Media files (auto generated)
+staticfiles/
+media/
+# Optional: Ignore collected static files
+static/
+
+# Coverage/testing
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# VS Code, PyCharm, other IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Pipenv
+Pipfile.lock
+
+# MyPy / Type checker
+.mypy_cache/
+
+# Build files
+build/
+dist/
+*.egg-info/
+.eggs/
+MANIFEST
+
+# Docker (if using)
+*.pid
+
+# Node.js (if using npm/yarn in frontend)
+node_modules/
+yarn.lock
+package-lock.json
+
+# Ansible
+*.retry
+
+# =====================================
+# ✅ Safe for Django + PostgreSQL Project
+# =====================================
+

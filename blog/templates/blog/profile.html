@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <script
+      src="https://kit.fontawesome.com/cfa103c17e.js"
+      crossorigin="anonymous"
+    ></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link
+      rel="shortcut icon"
+      href="{% static 'blog/images/fav.png' %}"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <!-- ==header section==================== -->
+    <header class="py-3 md:px-8 bg-indigo-300 z-10 fixed w-[100%] top-0 left-0">
+      <nav
+        class="flex items-center justify-between md:w-[80%] mx-auto px-2 md:px-0"
+      >
+        <div>
+          <h1 class="text-gray-900 font-bold md:text-2xl text-xl">
+            New<span class="text-4xl text-indigo-600">S</span>hop
+          </h1>
+        </div>
+        <div class="flex gap-4"></div>
+      </nav>
+    </header>
+
+    <!-- ==profile page==================== -->
+    <section class="bg-indigo-200 py-16">
+      <div class="w-full md:h-[20rem] h-[5rem] relative cursor-pointer">
+        <img
+          src="{% static 'blog/images/7up.png' %}"
+          class="w-full md:h-[24rem] h-[10rem] overflow-hidden"
+          alt=""
+        />
+
+        <div class="w-[80%] mx-auto">
+          <div
+            class="md:w-[200px] w-[100px] h-[100px] md:h-[200px] rounded-full absolute bg-indigo-300 md:left-1/6 left-8 top-3/2 md:top-2/2 flex items-center justify-center z-30"
+          >
+            <img
+              src="{% static 'blog/images/jonayed.jpeg' %}"
+              class="md:w-[200px] w-[100px] h-[100px] md:h-[200px] rounded-full absolute -z-20 border-4 border-indigo-200"
+              alt=""
+            />
+            <div class="absolute md:-bottom-3 bottom-2 md:right-7 -right-0">
+              <i
+                class="fa-solid fa-camera text-gray-100 text-xl md:text-3xl z-40 p-2 rounded-full bg-gray-600"
+              ></i>
+            </div>
+            <div class="absolute right-0 bottom-0 md:bottom-50">
+              <h1 class="text-3xl font-black text-gray-700 mt-5">Pcodar</h1>
+              <h2 class="text-gray-500">Web Developer</h2>
+            </div>
+          </div>
+        </div>
+        <div class="border-t-1 mt-22 md:mt-42">
+          <div class="flex items-center md:w-[78%] mx-auto py-2 px-2 gap-2">
+            <a
+              href="#"
+              class="text-gray-600 text-[1rem] font-bold bg-indigo-200 hover:bg-indigo-300 py-2 px-3 rounded transition-all"
+              >shop</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 text-[1rem] font-bold bg-indigo-200 hover:bg-indigo-300 py-2 px-3 rounded transition-all"
+            >
+              history</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 text-[1rem] font-bold bg-indigo-200 hover:bg-indigo-300 py-2 px-3 rounded transition-all"
+              >subscriptions</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 text-[1rem] font-bold bg-indigo-200 hover:bg-indigo-300 py-2 px-3 rounded transition-all"
+            >
+              more
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

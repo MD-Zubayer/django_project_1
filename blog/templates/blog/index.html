@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    {% load static %}
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/static/blog/css/style4.css' %}"
+    />
+    <script
+      src="https://kit.fontawesome.com/c1f3ab7707.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    {% for post in posts %}
+
+    <main class="container">
+      <div class="div1">
+        <div class="profile-card">
+          <div class="profile-hed">
+            <div class="profile-img">
+              <img
+                src="{{ post.image.url }}"
+                alt="Post image"
+                class="profile-imge"
+              />
+            </div>
+            <div class="hedar">
+              <h3>{{ post.title }}</h3>
+            </div>
+          </div>
+          <div class="profile-date">
+            <p>{{ post.created_at }}</p>
+          </div>
+        </div>
+        <div class="post-card">
+          <p>{{ post.content }}</p>
+        </div>
+
+        <div class="profile-rige">
+          <span class="like-btn">
+            <i class="fa-solid fa-thumbs-up"></i>
+          </span>
+          <span class="comment-btn">
+            <i class="fa-solid fa-comment"></i>
+          </span>
+        </div>
+      </div>
+      {% endfor %}
+    </main>
+  </body>
+</html>
