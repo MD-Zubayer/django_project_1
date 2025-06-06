@@ -96,3 +96,4 @@ package-lock.json
 # ✅ Safe for Django + PostgreSQL Project
 # =====================================
 
+myenv/
