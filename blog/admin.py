@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Book, Author, FieldType
+from .models import Post, Book, Author, FieldType, UserSignUp
 
 # Register your models here.
 admin.site.register(Post)
@@ -20,3 +20,9 @@ class FieldTypeAdmin(admin.ModelAdmin):
     search_fields = ('char_field', 'email', 'url')
     list_filter = ('boolean_field',)
     ordering = ('-created_at_dt',)
+
+@admin.register(UserSignUp)
+class UserSignUpAdmin(admin.ModelAdmin):
+    list_display = ('user_name', 'phone_number', 'email')
+    search_fields = ('user_name', 'email')
+    list_filter = ('phone_number','user_name')

@@ -27,20 +27,25 @@
             method="POST"
             class="flex flex-col justify-center items-center space-y-8"
           >
+            {% csrf_token %}
             <h1 class="text-gray-900 font-bold md:text-2xl text-xl">
               New<span class="text-4xl text-indigo-600">S</span>hop
             </h1>
+            <!-- Username field -->
             <input
               type="name"
               name="name"
               placeholder="User name"
               class="border border-indigo-500 py-3 px-3 rounded-md outline-none bg-indigo-100 md:w-[20vw]"
+              value="{{ form.user_name.value|default_if_none:'' }}"
             />
+
             <input
               type="number"
               name="number"
               placeholder="phone number"
               class="border border-indigo-500 py-3 px-3 rounded-md outline-none bg-indigo-100 md:w-[20vw]"
+              value="{{form.phone_number.value|default_if_none:''}}"
             />
 
             <input
@@ -48,13 +53,17 @@
               name="email"
               placeholder="email"
               class="border border-indigo-500 py-3 px-3 rounded-md outline-none bg-indigo-100 md:w-[20vw]"
+              value="{{form.email.value|default_if_none:''}}"
             />
+
             <input
               type="password"
               name="password"
               placeholder=" password"
               class="border border-indigo-500 py-3 px-3 rounded-md outline-none bg-indigo-100 md:w-[20vw]"
+              value="{{ form.password.value|default_if_none:'' }}"
             />
+
             <button
               type="submit"
               class="border border-indigo-500 bg-indigo-400 text-white hover:bg-indigo-500 transition-all cursor-pointer py-3 px-3 rounded-md outline-none w-[70vw] md:w-[20vw]"

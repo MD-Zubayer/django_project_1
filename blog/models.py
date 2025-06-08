@@ -1,5 +1,6 @@
 from django.db import models
-
+from phonenumber_field.modelfields import PhoneNumberField
+from django.contrib.auth.models import User
 # Create your models here.
 class Post(models.Model):
     title = models.CharField(max_length=100)
@@ -46,3 +47,9 @@ class FieldType(models.Model):
 
     def __str__(self):
         return f'{self.char_field} - {self.integer_field} - {self.email} - {self.url} - {self.created_at_dt} - {self.created_at_date} - {self.created_at_time} - {self.updated_at  } - {self.boolean_field} - {self.text_field} - {self.float_field} - {self.decimal_field} - {self.image} - {self.file}'
+
+class UserSignUp(models.Model):
+    user_name = models.CharField(max_length=100)
+    phone_number =  PhoneNumberField()
+    email = models.EmailField(unique=True)
+    password = models.CharField(max_length=50)   
