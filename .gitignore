@@ -18,7 +18,7 @@ db.sqlite3
 **/migrations/*.pyc
 **/migrations/__pycache__/
 # If you want to ignore migration files themselves, uncomment below:
-# **/migrations/*.py
+#  **/migrations/*.py
 
 # Environment variables
 .env
@@ -97,4 +97,3 @@ package-lock.json
 # =====================================
 
 myenv
-data
